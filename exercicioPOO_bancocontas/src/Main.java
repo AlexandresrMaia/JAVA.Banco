@@ -13,11 +13,9 @@ public class Main {
         double saldoCC = leitor.nextDouble();
         contacorrente cc = new contacorrente("Leandro Oliveira", saldoCC, 2000.0);
 
-
         System.out.print("Digite o saldo inicial da Conta Poupança: ");
         double saldoCP = leitor.nextDouble();
         contapoupanca cp = new contapoupanca("Maria da Silva", saldoCP, 0.5);
-
 
         System.out.print("Digite o saldo inicial da Conta Empresarial: ");
         double saldoCE = leitor.nextDouble();
@@ -40,7 +38,7 @@ public class Main {
             System.out.print("Como deseja pagar? digite (1) para pagar À vista ou (2) para pagar a prazo? ");
             int opcaoCartao = leitor.nextInt();
             if (opcaoCartao == 2) {
-                System.out.print("Em quantas parcelas? ");
+                System.out.print("Deseja dividir em quantas parcelas? ");
                 int parcelas = leitor.nextInt();
                 double taxa = (escolha == 1) ? 1.05 : 1.10;
                 System.out.println("Parcelamento: " + parcelas + "x de R$ " + String.format("%.2f", (valorPgto * taxa) / parcelas));
