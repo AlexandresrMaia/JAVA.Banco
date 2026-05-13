@@ -11,15 +11,15 @@ public class Main {
 
         System.out.print("Digite o saldo inicial da Conta Corrente: ");
         double saldoCC = leitor.nextDouble();
-        contacorrente cc = new contacorrente("Leandro Oliveira", saldoCC, 2000.0);
+        contacorrente cc = new contacorrente("Alexand Maia", saldoCC, 2000.0);
 
         System.out.print("Digite o saldo inicial da Conta Poupança: ");
         double saldoCP = leitor.nextDouble();
-        contapoupanca cp = new contapoupanca("Maria da Silva", saldoCP, 0.5);
+        contapoupanca cp = new contapoupanca("Consuelo Soares", saldoCP, 0.5);
 
         System.out.print("Digite o saldo inicial da Conta Empresarial: ");
         double saldoCE = leitor.nextDouble();
-        contaempresarial ce = new contaempresarial("Bali Store", saldoCE, "13.458.678/0001-95", 15000.0, "Bali Store LTDA");
+        contaempresarial ce = new contaempresarial("iSolution PB", saldoCE, "13.458.678/0001-95", 15000.0, "iSolution PB");
 
         System.out.println("\nSISTEMA PRONTO PARA OPERAÇÕES");
 
